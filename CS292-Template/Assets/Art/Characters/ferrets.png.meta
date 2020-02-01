@@ -1,0 +1,2131 @@
+fileFormatVersion: 2
+guid: 1716427d7b8c47f46a028843d1c7b91b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5840636045487642270
+    second: ferrets_0
+  - first:
+      213: 6788127966402474317
+    second: ferrets_1
+  - first:
+      213: 1544922906514064473
+    second: ferrets_2
+  - first:
+      213: 8961163730274507910
+    second: ferrets_3
+  - first:
+      213: -3469804682233532123
+    second: ferrets_4
+  - first:
+      213: 5951383346098483698
+    second: ferrets_5
+  - first:
+      213: 354669888063798392
+    second: ferrets_6
+  - first:
+      213: 3993108821477879976
+    second: ferrets_7
+  - first:
+      213: -1472998448862052290
+    second: ferrets_8
+  - first:
+      213: -6122968110785769177
+    second: ferrets_9
+  - first:
+      213: -351104388183236800
+    second: ferrets_10
+  - first:
+      213: 5946653678292495245
+    second: ferrets_11
+  - first:
+      213: -3412930990435987544
+    second: ferrets_12
+  - first:
+      213: -6900080590847854554
+    second: ferrets_13
+  - first:
+      213: -661353352090631842
+    second: ferrets_14
+  - first:
+      213: -4722145167699768472
+    second: ferrets_15
+  - first:
+      213: 6517488730933639637
+    second: ferrets_16
+  - first:
+      213: -100342746192489213
+    second: ferrets_17
+  - first:
+      213: -5832246589121416481
+    second: ferrets_18
+  - first:
+      213: 8120552745944636931
+    second: ferrets_19
+  - first:
+      213: 6647961438494205833
+    second: ferrets_20
+  - first:
+      213: -5037606994857753541
+    second: ferrets_21
+  - first:
+      213: 83871187564345164
+    second: ferrets_22
+  - first:
+      213: -510449592588380008
+    second: ferrets_23
+  - first:
+      213: 7608382648601874098
+    second: ferrets_24
+  - first:
+      213: 6154573178894864705
+    second: ferrets_25
+  - first:
+      213: 8152421600144999765
+    second: ferrets_26
+  - first:
+      213: 7081727942792319671
+    second: ferrets_27
+  - first:
+      213: 9092307421586447228
+    second: ferrets_28
+  - first:
+      213: -5266543002518707014
+    second: ferrets_29
+  - first:
+      213: -1197017381044733721
+    second: ferrets_30
+  - first:
+      213: 6525370660684102061
+    second: ferrets_31
+  - first:
+      213: 1601632873537203538
+    second: ferrets_32
+  - first:
+      213: -1836164614464011649
+    second: ferrets_33
+  - first:
+      213: -3957581159050813780
+    second: ferrets_34
+  - first:
+      213: 8267249483393821354
+    second: ferrets_35
+  - first:
+      213: -2741326375072483705
+    second: ferrets_36
+  - first:
+      213: 6555275566569009139
+    second: ferrets_37
+  - first:
+      213: 1252291516238113830
+    second: ferrets_38
+  - first:
+      213: 6615295579855869439
+    second: ferrets_39
+  - first:
+      213: -1558779245863195305
+    second: ferrets_40
+  - first:
+      213: 5318133749019089812
+    second: ferrets_41
+  - first:
+      213: -3148893358402558610
+    second: ferrets_42
+  - first:
+      213: 2675731019569887375
+    second: ferrets_43
+  - first:
+      213: 6020419783349025184
+    second: ferrets_44
+  - first:
+      213: -4094889062578528911
+    second: ferrets_45
+  - first:
+      213: -4973190066799925828
+    second: ferrets_46
+  - first:
+      213: 5317560634833057517
+    second: ferrets_47
+  - first:
+      213: 6901124774156144764
+    second: ferrets_48
+  - first:
+      213: -5581166900352045555
+    second: ferrets_49
+  - first:
+      213: -7778292963509958952
+    second: ferrets_50
+  - first:
+      213: 8569152010717338643
+    second: ferrets_51
+  - first:
+      213: 4715739099254992415
+    second: ferrets_52
+  - first:
+      213: -1204617750889704820
+    second: ferrets_53
+  - first:
+      213: -5106034735025858774
+    second: ferrets_54
+  - first:
+      213: -1353778138338542211
+    second: ferrets_55
+  - first:
+      213: -1354900832091132316
+    second: ferrets_56
+  - first:
+      213: -6689422790507656429
+    second: ferrets_57
+  - first:
+      213: 6627032166312695250
+    second: ferrets_58
+  - first:
+      213: -4662692571808716306
+    second: ferrets_59
+  - first:
+      213: 5971393113295128520
+    second: ferrets_60
+  - first:
+      213: -7200957950714681897
+    second: ferrets_61
+  - first:
+      213: 3522184052393366575
+    second: ferrets_62
+  - first:
+      213: -5224592055322828445
+    second: ferrets_63
+  - first:
+      213: -3378780121187179576
+    second: ferrets_64
+  - first:
+      213: 4363110543100781987
+    second: ferrets_65
+  - first:
+      213: -3863103936091808785
+    second: ferrets_66
+  - first:
+      213: -2944850716824307073
+    second: ferrets_67
+  - first:
+      213: -2557091934067061551
+    second: ferrets_68
+  - first:
+      213: 8006774757503138499
+    second: ferrets_69
+  - first:
+      213: -5200269011160732126
+    second: ferrets_70
+  - first:
+      213: 7800632843632191058
+    second: ferrets_71
+  - first:
+      213: -1556307459938505848
+    second: ferrets_72
+  - first:
+      213: 4760719802967647793
+    second: ferrets_73
+  - first:
+      213: -4729908896122614502
+    second: ferrets_74
+  - first:
+      213: 6901178976341153271
+    second: ferrets_75
+  - first:
+      213: -1726316694315519183
+    second: ferrets_76
+  - first:
+      213: 849849505679952202
+    second: ferrets_77
+  - first:
+      213: -6351340778670084631
+    second: ferrets_78
+  - first:
+      213: -9012295268255655068
+    second: ferrets_79
+  - first:
+      213: 7715160722365829009
+    second: ferrets_80
+  - first:
+      213: 1737224439682731433
+    second: ferrets_81
+  - first:
+      213: -7675981669442562865
+    second: ferrets_82
+  - first:
+      213: -6251451967628689124
+    second: ferrets_83
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ferrets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e87fce76af7924784fd861dff47390
+      internalID: -5840636045487642270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ab7b9602ae76c49937a27fd5c0f857
+      internalID: 6788127966402474317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82679868647e42a4cad1d6b819dd395c
+      internalID: 1544922906514064473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0427408cd71f3e14fb7a7bdbe5d6511e
+      internalID: 8961163730274507910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91ddfdfa2a7fae4190361681950433d
+      internalID: -3469804682233532123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabaecab0a6347e4ea44da5c568f2f39
+      internalID: 5951383346098483698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e5e530bf9378247bc7da78576f0d3b
+      internalID: 354669888063798392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f299424c9b6216468bc6a2de8a16c7d
+      internalID: 3993108821477879976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb73f44dca67b845b16bb299ef77ecb
+      internalID: -1472998448862052290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7324a3ada4e9e9144b64311886be5e5a
+      internalID: -6122968110785769177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b1ed5943096154081e7728478717b2
+      internalID: -351104388183236800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 334
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3058eef21f6df41a102fa5d065ae5a
+      internalID: 5946653678292495245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772635f2096deef4cb5465d0cfc1bfe3
+      internalID: -3412930990435987544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a742cc6173b97034aaf3fcb381c04b68
+      internalID: -6900080590847854554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7607d7e5f2ccf04a8743f7a3342d520
+      internalID: -661353352090631842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163bfe7278f17eb47b27923ffc3fc2f2
+      internalID: -4722145167699768472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd10124bcf536534399f8312fa2ee668
+      internalID: 6517488730933639637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b5fb206d2acdc4d9d75d3aa7a9f066
+      internalID: -100342746192489213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9268045ad663664cac8b6ede543c478
+      internalID: -5832246589121416481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2492f65dd4d1a42a5df8168e540b76
+      internalID: 8120552745944636931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156a141b87043cb4a85f9e32732f03aa
+      internalID: 6647961438494205833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdcbe27b7849f5489bee239405320fb
+      internalID: -5037606994857753541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acdac89a97114148aae8c846276e53b
+      internalID: 83871187564345164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_23
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 284
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea8a7651d9df0840b787d4b5aa50ee3
+      internalID: -510449592588380008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f73ef57f2b4684b9375e15e4894bb8
+      internalID: 7608382648601874098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2aee489f828e040980155d44ad1b6d
+      internalID: 6154573178894864705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469e859654e7fa240b1e8408f9914957
+      internalID: 8152421600144999765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b518387593c132b43841a905ca0f56f0
+      internalID: 7081727942792319671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_28
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ce1fe408804e48942c6ec8cdc902f
+      internalID: 9092307421586447228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189fe7d46d11ff449897d3c4ddcebfdc
+      internalID: -5266543002518707014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e9c3bd0f4397c4db66f6ec8ac0a4e4
+      internalID: -1197017381044733721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2632ad1fdc5460c4bbcffa061d2eeff0
+      internalID: 6525370660684102061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a0c42a28208214fa72ebc39f5620d0
+      internalID: 1601632873537203538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab65a173f975d374a844f01412af8e0c
+      internalID: -1836164614464011649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866555f1455a5cd4998a5967600e8f85
+      internalID: -3957581159050813780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_35
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 234
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a2bdacf67cf9c4d81c8a9c0e429b84
+      internalID: 8267249483393821354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cce50bf99ef1049a17a4832ae18c9c
+      internalID: -2741326375072483705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7e4ff97dd9c844e8461914a4ebdb3f
+      internalID: 6555275566569009139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8528d68ac35877e4e989f6f8e7135613
+      internalID: 1252291516238113830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b6eb067dd8ff5418dc500748b2e494
+      internalID: 6615295579855869439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a94b4b1e376b6445bf73dbee5b82a74
+      internalID: -1558779245863195305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_41
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1d2155f463b2418eb5ea9e10d1e6a
+      internalID: 5318133749019089812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8778e0a9bd0ba4d9bfb7a841b2fd72
+      internalID: -3148893358402558610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_43
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2956a137dc1eba40bbc8f98eaad5f28
+      internalID: 2675731019569887375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7071ab53d1606418fc7c93f5dfc1c1
+      internalID: 6020419783349025184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_45
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ac4ce6ce930e341a2d3152b9bd1788
+      internalID: -4094889062578528911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c95fb881256684c94b9616ebe5faeb
+      internalID: -4973190066799925828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 184
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b468e32760941de45b613663dd115dfd
+      internalID: 5317560634833057517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621f69749d7179649838828131d6f71d
+      internalID: 6901124774156144764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_49
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011c54226390b544eb84386817b20cb1
+      internalID: -5581166900352045555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71517ec9f4a9ec0448712945a1935cda
+      internalID: -7778292963509958952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f19d5b7a5877504cb40ba8ce52688c6
+      internalID: 8569152010717338643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fe830dd1afdfd45a7f4b99a08f610c
+      internalID: 4715739099254992415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_53
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31fbd9a42e4a0c42b61afd93e98dd20
+      internalID: -1204617750889704820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57119d1c116cb04a8d5b52072f5304b
+      internalID: -5106034735025858774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_55
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8101350fd3234ab5d02a742205ee1
+      internalID: -1353778138338542211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56566c74513a304f8175c4e975b68c4
+      internalID: -1354900832091132316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cafcb25a7fb5d40acee36599fc87a8
+      internalID: -6689422790507656429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_58
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8fc7f7f906a5847b5827461163ccb9
+      internalID: 6627032166312695250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_59
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 134
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f9505df38e4004b9276d539b526f7d
+      internalID: -4662692571808716306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c432a7e144d384d94c10ede95387a2
+      internalID: 5971393113295128520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_61
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce5656d7cd2eda46babd57c2388448f
+      internalID: -7200957950714681897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83159ec467ab8b45a4cbfabc6cd45bd
+      internalID: 3522184052393366575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729ccace6ef24ec489259c06f27d1d61
+      internalID: -5224592055322828445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59cbeada9a5a474eb59c508e06b6e0a
+      internalID: -3378780121187179576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_65
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a7cda11f11055418da3446a245d5a7
+      internalID: 4363110543100781987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2153084e28f444a830774ce7cdde65
+      internalID: -3863103936091808785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_67
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d11171e93135c4d84865b93a7c74cb
+      internalID: -2944850716824307073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1547e89f505b2484eb1eb76fb9fbd0df
+      internalID: -2557091934067061551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17af8ad84d335842a50cceb7fb5a64e
+      internalID: 8006774757503138499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_70
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8707f94331bf829479eb9646272547a8
+      internalID: -5200269011160732126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_71
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 84
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795bc776bc20aaa4f9be8ba1779b5d70
+      internalID: 7800632843632191058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8693e1a5aa170214caf495fc91289b53
+      internalID: -1556307459938505848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae5442ce2667b3439fd941d733b75bd
+      internalID: 4760719802967647793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a0367a49339dc42b0cf8549bcb356f
+      internalID: -4729908896122614502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4607f4d1b3fc5ea479f8b4f43eb35827
+      internalID: 6901178976341153271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97bdb94cd7577c4a980b17709e2650a
+      internalID: -1726316694315519183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_77
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cc8857b6e5ba44f878baa2a62a915e
+      internalID: 849849505679952202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d5d1eb16ecd914db91b03b1203e80b
+      internalID: -6351340778670084631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_79
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44f0df4b2e4a4148b020410080a9f4c
+      internalID: -9012295268255655068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f447cc1a8d1c41449cf55e681821141
+      internalID: 7715160722365829009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_81
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dca21be2dcb824296127600e3dc551
+      internalID: 1737224439682731433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_82
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e062f02613c0b1a4a951798e7516f69c
+      internalID: -7675981669442562865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferrets_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 34
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd8d4b57bd52b942bbd08fa38fe399e
+      internalID: -6251451967628689124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
