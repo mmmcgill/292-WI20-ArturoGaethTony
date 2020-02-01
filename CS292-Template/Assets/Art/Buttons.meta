@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:CS292-Template/Assets/Resources.meta
 guid: 1d559b4a901261b4d86f6051bc13f56b
+=======
+guid: bbec51c6b6409534eaab5eca3c86dc21
+>>>>>>> Arturo-AddFiles:CS292-Template/Assets/Art/Buttons.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
