@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6472653840687523960}
   - component: {fileID: 8511492945744031166}
-  - component: {fileID: 4729720858787222763}
+  - component: {fileID: 5328602032086225027}
   m_Layer: 0
   m_Name: ferret
   m_TagString: Untagged
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4729720858787222763
+--- !u!95 &5328602032086225027
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ Animator:
   m_GameObject: {fileID: 3604153367796958573}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c4fb3cc78aa99a4429cea5cc42ee4fb4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7ce570c39f4dac1409e3fb6d09f2e939, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
