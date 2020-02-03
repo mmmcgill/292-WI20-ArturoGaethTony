@@ -6,6 +6,8 @@ public class playerScript : MonoBehaviour
 {
     public int health;
     private Vector2 spawnPos;
+    private int score;
+    static float enemySpeed;
     Rigidbody2D rigidbody2d;
 
 
@@ -13,6 +15,8 @@ public class playerScript : MonoBehaviour
     void Start()
     {
         health = 5;
+        score = 0;
+        enemySpeed = 3.0f;
         rigidbody2d = GetComponent<Rigidbody2D>();
         spawnPos = transform.position;
 
@@ -38,7 +42,7 @@ public class playerScript : MonoBehaviour
     }
 
     
-    void OnColliderEnter2D(Collider2D collidedWith)
+    void OnCollisionEnter2D(Collider2D collidedWith)
     {
         UnityEngine.Debug.Log("nutty collided");
         if (collidedWith.gameObject.tag == "enemies")
@@ -54,5 +58,26 @@ public class playerScript : MonoBehaviour
         UnityEngine.Debug.Log("nuttyRespawned");
         UnityEngine.Debug.Log(spawnPos);
         transform.position = spawnPos;
+    }
+
+    public void damage()
+    {
+        health -= 1;
+        if (health == 0)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            respawnNutty();
+        }
+    }
+
+    void reachedGoal() 
+    {
+        score += 100;
+        respawnNutty();
+        enemySpeed += 0.5f;
+
     }
 }
