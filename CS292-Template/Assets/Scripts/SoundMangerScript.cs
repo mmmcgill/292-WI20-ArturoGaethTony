@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundMangerScript : MonoBehaviour
 {
     public static AudioClip title, nutCollect, squirrelHit, levelClear, jungleBeat, gameOver, buttonClick, birdWhistling, healthIncrease;
     static AudioSource audioSrc; 
     // Start is called before the first frame update
+    public AudioMixer mixer;
+    public bool isTitle = true;
+
     void Start()
     {
-        title = Resources.Load<AudioClip> ("title");
+        title = Resources.Load<AudioClip> ("Assets/Sounds/title.wav");
         nutCollect = Resources.Load<AudioClip> ("Nut_collect");
         squirrelHit = Resources.Load<AudioClip> ("squirrel_hit");
         levelClear = Resources.Load<AudioClip> ("level_clear");
@@ -19,13 +23,17 @@ public class SoundMangerScript : MonoBehaviour
         birdWhistling = Resources.Load<AudioClip> ("bird_whistling");
         healthIncrease = Resources.Load<AudioClip> ("health_increase");
 
-        audioSrc = GetComponent<AudioSource> ();
+        audioSrc = this.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(isTitle){
+            audioSrc.PlayOneShot(title);
+        }else{
+            PlaySound("jungleBeat");
+        }
     }
     public static void PlaySound(string clip){
         switch(clip){
@@ -57,5 +65,13 @@ public class SoundMangerScript : MonoBehaviour
                 audioSrc.PlayOneShot(birdWhistling);
                 break;
         }
+    }
+
+    public static void clickSound(){
+        audioSrc.PlayOneShot(buttonClick);
+    }
+
+    public void SetLevel (float sliderValue){
+        mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) *20);
     }
 }
