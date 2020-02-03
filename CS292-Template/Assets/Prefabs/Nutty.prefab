@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3067908894686017997}
   - component: {fileID: 4989415097990140502}
   - component: {fileID: -1698583514586250952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nutty
   m_TagString: Untagged
   m_Icon: {fileID: 0}

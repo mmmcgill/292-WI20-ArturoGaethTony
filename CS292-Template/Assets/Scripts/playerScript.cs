@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerScript : MonoBehaviour
 {
     public int health;
-    private Vector3 spawnPos;
+    private Vector2 spawnPos;
     Rigidbody2D rigidbody2d;
 
 
@@ -27,19 +27,32 @@ public class playerScript : MonoBehaviour
         Vector2 position = rigidbody2d.position;
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
-            position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+            position.x = position.x + 15.0f * horizontal * Time.deltaTime;
         }
         else if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
 
-            position.y = position.y + 3.0f * vertical * Time.deltaTime;
+            position.y = position.y + 15.0f * vertical * Time.deltaTime;
         }
         rigidbody2d.MovePosition(position);
     }
-    
-    void respawnNutty()
-    {
 
-        rigidbody2d.MovePosition(spawnPos);
+    
+    void OnColliderEnter2D(Collider2D collidedWith)
+    {
+        UnityEngine.Debug.Log("nutty collided");
+        if (collidedWith.gameObject.tag == "enemies")
+        {
+            respawnNutty();
+            //Destroy(gameObject);
+        }
+
+
+    }     
+    public void respawnNutty()
+    {
+        UnityEngine.Debug.Log("nuttyRespawned");
+        UnityEngine.Debug.Log(spawnPos);
+        transform.position = spawnPos;
     }
 }
