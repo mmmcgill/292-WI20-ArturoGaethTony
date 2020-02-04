@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerScript : MonoBehaviour
+public class playerScriptTest : MonoBehaviour
 {
     public int health;
     private Vector2 spawnPos;
@@ -12,13 +12,6 @@ public class playerScript : MonoBehaviour
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
     public float speed = 15.0f;
-    public GameObject heart1;
-    public GameObject heart2;
-    public GameObject heart3;
-    public GameObject heart4;
-    public GameObject heart5;
-    public GameObject gameUI;
-    public GameObject gameOverUI;
 
 
     // Start is called before the first frame update
@@ -47,8 +40,6 @@ public class playerScript : MonoBehaviour
             lookDirection.Normalize();
         }
 
-        animator.SetFloat("Move X", move.x);
-        animator.SetFloat("Move Y", move.y);
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
         animator.SetFloat("Speed", move.magnitude);
@@ -91,30 +82,9 @@ public class playerScript : MonoBehaviour
 
     public void damage()
     {
-        if (health == 5)
-            heart1.SetActive(false);
-        if (health == 4)
-            heart2.SetActive(false);
-        if (health == 3)
-            heart3.SetActive(false);
-        if (health == 2)
-            heart4.SetActive(false);
-        if (health == 1)
-            heart5.SetActive(false);
-
         health -= 1;
-
-
         if (health == 0)
         {
-            gameUI.SetActive(false);
-            heart1.SetActive(true);
-            heart2.SetActive(true);
-            heart3.SetActive(true);
-            heart4.SetActive(true);
-            heart5.SetActive(true);
-            gameOverUI.SetActive(true);
-
             Destroy(gameObject);
         }
         else

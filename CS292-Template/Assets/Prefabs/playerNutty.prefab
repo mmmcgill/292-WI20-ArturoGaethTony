@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3737121287570912087}
   - component: {fileID: 3737121287570912091}
   - component: {fileID: 3737121287570912090}
+  - component: {fileID: 931108997101076142}
+  - component: {fileID: 1711143586}
   m_Layer: 8
   m_Name: playerNutty
   m_TagString: Player
@@ -144,3 +146,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2278372, y: 0.20254296}
   m_EdgeRadius: 0
+--- !u!95 &931108997101076142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737121287570912086}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cfc75327c8205ea4c9185ab591067029, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1711143586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737121287570912086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc674d7d6782d234db69050cd0f1bbfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  speed: 15
