@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3737121287570912091}
   - component: {fileID: 3737121287570912090}
   - component: {fileID: 931108997101076142}
-  - component: {fileID: 1711143586}
   m_Layer: 8
   m_Name: playerNutty
   m_TagString: Player
@@ -120,6 +119,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  speed: 3
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  heart4: {fileID: 0}
+  heart5: {fileID: 0}
+  gameUI: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  noPause: {fileID: 0}
 --- !u!61 &3737121287570912090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,17 +173,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1711143586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3737121287570912086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc674d7d6782d234db69050cd0f1bbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  speed: 15
