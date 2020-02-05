@@ -12,7 +12,7 @@ public class EnemyScript : MonoBehaviour
     {
         //direction should be changed by the spawner depending on what side it is. Will add method to do this
         direction = -1;
-        speed = 3.0f;
+        speed = playerScript.enemySpeed;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 

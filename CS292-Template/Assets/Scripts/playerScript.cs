@@ -7,7 +7,7 @@ public class playerScript : MonoBehaviour
     public int health;
     private Vector2 spawnPos;
     private int score;
-    static float enemySpeed;
+    public static float enemySpeed;
     Rigidbody2D rigidbody2d;
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -71,15 +71,20 @@ public class playerScript : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collider2D collidedWith)
+    void OnCollisionEnter2D(Collision2D collidedWith)
     {
-        UnityEngine.Debug.Log("nutty collided");
         if (collidedWith.gameObject.tag == "enemies")
         {
+            UnityEngine.Debug.Log("nutty collided with enemy");
             respawnNutty();
             //Destroy(gameObject);
         }
 
+        if (collidedWith.gameObject.tag == "goal")
+        {
+            UnityEngine.Debug.Log("nutty collided with goal");
+            reachedGoal();
+        }
 
     }
     public void respawnNutty()
@@ -111,6 +116,7 @@ public class playerScript : MonoBehaviour
             healNutty();
             gameOverUI.SetActive(true);
             gameObject.SetActive(false);
+            enemySpeed = 3.0f;
         }
         else
         {
@@ -118,7 +124,7 @@ public class playerScript : MonoBehaviour
         }
     }
 
-    void reachedGoal()
+    public void reachedGoal()
     {
         SoundMangerScript.PlaySound("levelClear");
         ScoreScript.scoreValue += 100;
@@ -135,5 +141,10 @@ public class playerScript : MonoBehaviour
         heart3.SetActive(true);
         heart4.SetActive(true);
         heart5.SetActive(true);
+    }
+
+    public void resetEnemySpeed()
+    {
+        enemySpeed = 3.0f;
     }
 }

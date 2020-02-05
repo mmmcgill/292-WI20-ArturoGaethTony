@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 4543333054500296057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.95248306, y: -0.18196625, z: -7.2095203}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
+  - {fileID: 0}
   - {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e, type: 3}
+  nextSpawnTime: 0.0001
+  startTime: 0.0001
