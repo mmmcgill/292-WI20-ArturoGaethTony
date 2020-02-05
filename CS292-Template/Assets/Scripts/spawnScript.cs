@@ -25,7 +25,7 @@ public class spawnScript : MonoBehaviour
         if (nextSpawnTime <= 0)
         {
            Instantiate(enemies[enemyChoice], position, Quaternion.identity);
-            nextSpawnTime = startTime;
+            nextSpawnTime = Random.Range(0.0f, playerScript.capTime);
             
         }
         else

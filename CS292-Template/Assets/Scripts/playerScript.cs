@@ -8,6 +8,7 @@ public class playerScript : MonoBehaviour
     private Vector2 spawnPos;
     private int score;
     public static float enemySpeed;
+    public static float capTime;
     Rigidbody2D rigidbody2d;
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -25,6 +26,7 @@ public class playerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        capTime = 3.0f;
         health = 5;
         score = 0;
         enemySpeed = 3.0f;
@@ -131,6 +133,10 @@ public class playerScript : MonoBehaviour
         ScoreScript.scoreValue += 100;
         respawnNutty();
         enemySpeed += 0.5f;
+        if (capTime > 1.0f)
+        {
+            capTime -= 0.1f;
+        }
 
     }
 
@@ -151,6 +157,8 @@ public class playerScript : MonoBehaviour
 
     public void resetScore()
     {
+        enemySpeed = 3.0f;
+        capTime = 3.0f;
         ScoreScript.scoreValue = 0;
     }
 }
