@@ -621,7 +621,6 @@ GameObject:
   - component: {fileID: 166349426}
   - component: {fileID: 166349425}
   - component: {fileID: 166349424}
-  - component: {fileID: 166349423}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -648,18 +647,6 @@ RectTransform:
   m_AnchoredPosition: {x: 141, y: -132}
   m_SizeDelta: {x: 214, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &166349423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166349421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c646ef9dc4c524aa703da9f2256d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &166349424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,7 +1535,6 @@ GameObject:
   - component: {fileID: 288842359}
   - component: {fileID: 288842358}
   - component: {fileID: 288842357}
-  - component: {fileID: 288842356}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -1575,18 +1561,6 @@ RectTransform:
   m_AnchoredPosition: {x: 141, y: -132}
   m_SizeDelta: {x: 214, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &288842356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288842354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c646ef9dc4c524aa703da9f2256d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &288842357
 MonoBehaviour:
   m_ObjectHideFlags: 0
