@@ -121,7 +121,7 @@ public class playerScript : MonoBehaviour
     void reachedGoal()
     {
         SoundMangerScript.PlaySound("levelClear");
-        score += 100;
+        ScoreScript.scoreValue += 100;
         respawnNutty();
         enemySpeed += 0.5f;
 
