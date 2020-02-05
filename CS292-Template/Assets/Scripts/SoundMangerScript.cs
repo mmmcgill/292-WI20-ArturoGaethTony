@@ -10,30 +10,28 @@ public class SoundMangerScript : MonoBehaviour
     // Start is called before the first frame update
     public AudioMixer mixer;
     public bool isTitle = true;
-
+    bool isClicked ;
     void Start()
     {
-        title = Resources.Load<AudioClip> ("Assets/Sounds/title.wav");
-        nutCollect = Resources.Load<AudioClip> ("Nut_collect");
-        squirrelHit = Resources.Load<AudioClip> ("squirrel_hit");
-        levelClear = Resources.Load<AudioClip> ("level_clear");
-        jungleBeat = Resources.Load<AudioClip> ("jungle_beat");
-        gameOver = Resources.Load<AudioClip> ("game_over");
-        buttonClick = Resources.Load<AudioClip> ("button_click");
-        birdWhistling = Resources.Load<AudioClip> ("bird_whistling");
-        healthIncrease = Resources.Load<AudioClip> ("health_increase");
-
-        audioSrc = this.gameObject.GetComponent<AudioSource>();
+        title = Resources.Load<AudioClip> ("Sounds/title");
+        nutCollect = Resources.Load<AudioClip> ("Sounds/Nut_collect");
+        squirrelHit = Resources.Load<AudioClip> ("Sounds/squirrel_hit");
+        levelClear = Resources.Load<AudioClip> ("Sounds/level_clear");
+        jungleBeat = Resources.Load<AudioClip> ("Sounds/jungle_beat");
+        gameOver = Resources.Load<AudioClip> ("Sounds/game_over");
+        buttonClick = Resources.Load<AudioClip> ("Sounds/button_click");
+        birdWhistling = Resources.Load<AudioClip> ("Sounds/bird_whistling");
+        healthIncrease = Resources.Load<AudioClip> ("Sounds/health_increase");
+        if (GetComponent<AudioSource>() == null){
+            gameObject.AddComponent<AudioSource>();
+        }
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if(isTitle){
-            audioSrc.PlayOneShot(title);
-        }else{
-            PlaySound("jungleBeat");
-        }
+    {   
+
     }
     public static void PlaySound(string clip){
         switch(clip){
@@ -67,11 +65,19 @@ public class SoundMangerScript : MonoBehaviour
         }
     }
 
-    public static void clickSound(){
+    public void clickSound(){
+        if (GetComponent<AudioSource>() == null){
+            gameObject.AddComponent<AudioSource>();
+        }
+        audioSrc = GetComponent<AudioSource>();
         audioSrc.PlayOneShot(buttonClick);
     }
 
     public void SetLevel (float sliderValue){
         mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) *20);
+    }
+    
+    private void setComop(){
+        
     }
 }
