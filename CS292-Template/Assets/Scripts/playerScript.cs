@@ -108,15 +108,9 @@ public class playerScript : MonoBehaviour
         if (health == 0)
         {    
             SoundMangerScript.PlaySound("gameOver");
-            gameUI.SetActive(false);
-            heart1.SetActive(true);
-            heart2.SetActive(true);
-            heart3.SetActive(true);
-            heart4.SetActive(true);
-            heart5.SetActive(true);
+            healNutty();
             gameOverUI.SetActive(true);
-
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -131,5 +125,15 @@ public class playerScript : MonoBehaviour
         respawnNutty();
         enemySpeed += 0.5f;
 
+    }
+
+    public void healNutty()
+    {
+        health = 5;
+        heart1.SetActive(true);
+        heart2.SetActive(true);
+        heart3.SetActive(true);
+        heart4.SetActive(true);
+        heart5.SetActive(true);
     }
 }
