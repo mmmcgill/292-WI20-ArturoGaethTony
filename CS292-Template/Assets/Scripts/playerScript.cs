@@ -19,6 +19,7 @@ public class playerScript : MonoBehaviour
     public GameObject heart5;
     public GameObject gameUI;
     public GameObject gameOverUI;
+    public GameObject noPause;
 
 
     // Start is called before the first frame update
@@ -113,8 +114,8 @@ public class playerScript : MonoBehaviour
         if (health == 0)
         {    
             SoundMangerScript.PlaySound("gameOver");
-            healNutty();
             gameOverUI.SetActive(true);
+            noPause.SetActive(false);
             gameObject.SetActive(false);
             enemySpeed = 3.0f;
         }
@@ -146,5 +147,10 @@ public class playerScript : MonoBehaviour
     public void resetEnemySpeed()
     {
         enemySpeed = 3.0f;
+    }
+
+    public void resetScore()
+    {
+        ScoreScript.scoreValue = 0;
     }
 }
