@@ -1381,7 +1381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &270180991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2731,6 +2731,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 495417373}
+        m_MethodName: resetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &469920349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3120,6 +3131,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1448049281}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 495417373}
+        m_MethodName: resetScore
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3723,6 +3745,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 495417373}
         m_MethodName: resetEnemySpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 495417373}
+        m_MethodName: resetScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36751,6 +36784,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 495417373}
+        m_MethodName: resetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1120716140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39091,7 +39135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!156049354 &1573635140
 Grid:
   m_ObjectHideFlags: 0
@@ -40747,6 +40791,11 @@ PrefabInstance:
       propertyPath: gameUI
       value: 
       objectReference: {fileID: 1448049281}
+    - target: {fileID: 3737121287570912091, guid: 06a67ca9616181d42946ef6232a5cc46,
+        type: 3}
+      propertyPath: noPause
+      value: 
+      objectReference: {fileID: 166023906}
     m_RemovedComponents:
     - {fileID: 1711143586, guid: 06a67ca9616181d42946ef6232a5cc46, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 06a67ca9616181d42946ef6232a5cc46, type: 3}
