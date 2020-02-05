@@ -112,8 +112,24 @@ public class playerScript : MonoBehaviour
         SoundMangerScript.PlaySound("squirrelHit");
 
         if (health == 0)
+<<<<<<< Updated upstream
         {    
             SoundMangerScript.PlaySound("gameOver");
+=======
+<<<<<<< HEAD
+        {
+            noPause.SetActive(false);
+=======
+        {    
+            SoundMangerScript.PlaySound("gameOver");
+            gameUI.SetActive(false);
+            heart1.SetActive(true);
+            heart2.SetActive(true);
+            heart3.SetActive(true);
+            heart4.SetActive(true);
+            heart5.SetActive(true);
+>>>>>>> MoreScriptChanges
+>>>>>>> Stashed changes
             gameOverUI.SetActive(true);
             noPause.SetActive(false);
             gameObject.SetActive(false);
@@ -128,7 +144,11 @@ public class playerScript : MonoBehaviour
     public void reachedGoal()
     {
         SoundMangerScript.PlaySound("levelClear");
+<<<<<<< Updated upstream
         ScoreScript.scoreValue += 100;
+=======
+        score += 100;
+>>>>>>> Stashed changes
         respawnNutty();
         enemySpeed += 0.5f;
 
