@@ -103,10 +103,11 @@ public class playerScript : MonoBehaviour
             heart5.SetActive(false);
 
         health -= 1;
-
+        SoundMangerScript.PlaySound("squirrelHit");
 
         if (health == 0)
-        {
+        {    
+            SoundMangerScript.PlaySound("gameOver");
             gameUI.SetActive(false);
             heart1.SetActive(true);
             heart2.SetActive(true);
@@ -125,6 +126,7 @@ public class playerScript : MonoBehaviour
 
     void reachedGoal()
     {
+        SoundMangerScript.PlaySound("levelClear");
         score += 100;
         respawnNutty();
         enemySpeed += 0.5f;
