@@ -11,7 +11,15 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         //direction should be changed by the spawner depending on what side it is. Will add method to do this
-        direction = -1;
+        bool onLeft = Camera.main.transform.position.x > transform.position.x;
+        if (onLeft)
+        {
+            direction = 1;
+        }
+        else
+        {
+            direction = -1;
+        }
         speed = playerScript.enemySpeed;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 0}
+  - {fileID: 7656483808679827620, guid: fb3223480f551a049a43b9ad97bc0fa5, type: 3}
   - {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e, type: 3}
   nextSpawnTime: 0.0001
   startTime: 0.0001
