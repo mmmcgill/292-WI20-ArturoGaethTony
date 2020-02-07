@@ -76,7 +76,9 @@ public class SoundMangerScript : MonoBehaviour
     public void SetLevel (float sliderValue){
         mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) *20);
     }
-    
+    public void SetEffectsLevel (float sliderValue){
+        mixer.SetFloat("EffectsVol", Mathf.Log10(sliderValue) *20);
+    }
     private void setComop(){
         
     }
