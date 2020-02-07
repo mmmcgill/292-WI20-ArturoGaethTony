@@ -28,7 +28,6 @@ public class EnemyScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collidedWith)
     {   
-        UnityEngine.Debug.Log("ferret collided");
         if (collidedWith.gameObject.tag == "destroyEnemey")
         {
             Destroy(gameObject);
