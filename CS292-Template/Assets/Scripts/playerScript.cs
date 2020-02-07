@@ -126,19 +126,19 @@ public class playerScript : MonoBehaviour
         switch (direct)
         {
             case "up":
-                endPosition = new Vector3(endPosition.x, endPosition.y + distanceToMove, endPosition.z);
+                endPosition = new Vector3(transform.position.x, transform.position.y + distanceToMove, transform.position.z);
                 break;
 
             case "down":
-                endPosition = new Vector3(endPosition.x, endPosition.y - distanceToMove, endPosition.z);
+                endPosition = new Vector3(transform.position.x, transform.position.y - distanceToMove, transform.position.z);
                 break;
 
             case "left":
-                endPosition = new Vector3(endPosition.x - distanceToMove, endPosition.y, endPosition.z);
+                endPosition = new Vector3(transform.position.x - distanceToMove, transform.position.y, transform.position.z);
                 break;
 
             case "right":
-                endPosition = new Vector3(endPosition.x + distanceToMove, endPosition.y, endPosition.z);
+                endPosition = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
                 break;
 
             default:
@@ -148,6 +148,7 @@ public class playerScript : MonoBehaviour
     }
             void OnCollisionEnter2D(Collision2D collidedWith)
     {
+        UnityEngine.Debug.Log("Nutty Crashed");
         if (collidedWith.gameObject.tag == "enemies")
         {
             UnityEngine.Debug.Log("nutty collided with enemy");
@@ -161,6 +162,27 @@ public class playerScript : MonoBehaviour
             reachedGoal();
         }
 
+        if (collidedWith.gameObject.name == "borderLeft")
+        {
+            endPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+
+        }
+
+        if (collidedWith.gameObject.name == "borderRight")
+        {
+            endPosition = new Vector3(endPosition.x - 0.1f, transform.position.y, transform.position.z);
+            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+        }
+
+        if (collidedWith.gameObject.name == "borderBottom")
+        {
+            endPosition = new Vector3(transform.position.x, transform.position.y + 0.1f, endPosition.z);
+            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+        }
     }
     public void respawnNutty()
     {
