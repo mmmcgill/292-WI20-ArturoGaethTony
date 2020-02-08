@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
     public int direction;
     public float speed;
     Rigidbody2D rigidbody2d;
+    Animator animator;
    // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class EnemyScript : MonoBehaviour
         }
         speed = playerScript.enemySpeed;
         rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,7 +33,7 @@ public class EnemyScript : MonoBehaviour
 
         position.x = position.x + speed * direction * Time.deltaTime;
         rigidbody2d.MovePosition(position);
-
+        animator.SetFloat("MoveX", direction);
     }
 
     void OnTriggerEnter2D(Collider2D collidedWith)
