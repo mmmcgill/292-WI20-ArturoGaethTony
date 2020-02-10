@@ -56,11 +56,14 @@ public class playerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        Vector2 move = new Vector2(horizontal, vertical);
-
+        if (transform.position == endPosition)
+        {
+            animator.SetFloat("Speed", 0);
+        }
+        //float horizontal = Input.GetAxis("Horizontal");
+        //float vertical = Input.GetAxis("Vertical");
+        // Vector2 move = new Vector2(horizontal, vertical);
+        /**
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
             lookDirection.Set(move.x, move.y);
@@ -71,36 +74,35 @@ public class playerScript : MonoBehaviour
         animator.SetFloat("Move Y", move.y);
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
-
+        */
         Vector2 position = rigidbody2d.position;
 
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            startTouchPosition = Input.GetTouch(0).position;
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
+            endTouchPosition = Input.GetTouch(0).position;
+            float FinX = endTouchPosition.x - startTouchPosition.x;
+            float FinY = endTouchPosition.y - startTouchPosition.y;
+            if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+            {
+                if (FinX > 0)
+                    movement("right");
+                else
+                    movement("left");
+            }
+            else
+            {
+                if (FinY > 0)
+                    movement("up");
+                else
+                    movement("down");
+            }
+            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+        }
         if (rigidbody2d.velocity.magnitude == 0)
         {
-        
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-                startTouchPosition = Input.GetTouch(0).position;
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-            {
-                endTouchPosition = Input.GetTouch(0).position;
-                float FinX = endTouchPosition.x - startTouchPosition.x;
-                float FinY = endTouchPosition.y - startTouchPosition.y;
-                if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
-                {
-                    if (FinX > 0)
-                        movement("right");
-                    else
-                        movement("left");
-                }
-                else
-                {
-                    if (FinY > 0)
-                        movement("up");
-                    else
-                        movement("down");
-                }
-            }
-
             if (Input.GetKeyDown(KeyCode.A)) //Left
             {
                 movement("left");
@@ -125,27 +127,36 @@ public class playerScript : MonoBehaviour
 
     void movement(string direct)
     {
+        animator.SetFloat("Speed", 1);
+
         switch (direct)
         {
             case "up":
+                animator.SetFloat("Look Y", 1);
+                animator.SetFloat("Look X", 0);
                 endPosition = new Vector3(transform.position.x, transform.position.y + distanceToMove, transform.position.z);
                 break;
 
             case "down":
+                animator.SetFloat("Look Y", -1);
+                animator.SetFloat("Look X", 0);
                 endPosition = new Vector3(transform.position.x, transform.position.y - distanceToMove, transform.position.z);
                 break;
 
             case "left":
+                animator.SetFloat("Look X", -1);
+                animator.SetFloat("Look Y", 0);
                 endPosition = new Vector3(transform.position.x - distanceToMove, transform.position.y, transform.position.z);
                 break;
 
             case "right":
+                animator.SetFloat("Look X", 1);
+                animator.SetFloat("Look Y", 0);
                 endPosition = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
                 break;
 
             default:
                 return;
-
         }
     }
             void OnCollisionEnter2D(Collision2D collidedWith)
@@ -252,7 +263,7 @@ public class playerScript : MonoBehaviour
     public void resetScore()
     {
         enemySpeed = 3.0f;
-        capTime = 3.0f;
+        capTime = 4.0f;
         ScoreScript.scoreValue = 0;
     }
 
