@@ -30,9 +30,12 @@ public class playerScript : MonoBehaviour
     public Text score3;
     public Text score4;
     public Text score5;
-    
+
+    private Vector2 startTouchPosition, endTouchPosition;
+
 
     public ArrayList highScores;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +56,7 @@ public class playerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         Vector2 move = new Vector2(horizontal, vertical);
@@ -73,6 +77,30 @@ public class playerScript : MonoBehaviour
 
         if (rigidbody2d.velocity.magnitude == 0)
         {
+        
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+                startTouchPosition = Input.GetTouch(0).position;
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                endTouchPosition = Input.GetTouch(0).position;
+                float FinX = endTouchPosition.x - startTouchPosition.x;
+                float FinY = endTouchPosition.y - startTouchPosition.y;
+                if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+                {
+                    if (FinX > 0)
+                        movement("right");
+                    else
+                        movement("left");
+                }
+                else
+                {
+                    if (FinY > 0)
+                        movement("up");
+                    else
+                        movement("down");
+                }
+            }
+
             if (Input.GetKeyDown(KeyCode.A)) //Left
             {
                 movement("left");
@@ -89,33 +117,7 @@ public class playerScript : MonoBehaviour
             {
                 movement("down");
             }
-            /**
-         if (Input.touchCount > 0) {
-         Input.GetTouch(0).phase == TouchPhase.Moved; 
-
-             // Get movement of the finger since last frame
-             var touchDeltaPosition = Input.GetTouch(0).deltaPosition;
-
-             if (touchDeltaPosition.x > 1)
-             {
-                 movement("right");
-             }
-             else if (touchDeltaPosition.x < 1)
-             {
-                 movement("left");
-             }
-
-             else if (touchDeltaPosition.y > 1)
-             {
-                 movement("up");
-             }
-
-             else if (touchDeltaPosition.y < 1)
-             {
-                movement("down");
-             } 
-     }
-*/
+           
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
         }
@@ -153,7 +155,6 @@ public class playerScript : MonoBehaviour
         {
             UnityEngine.Debug.Log("nutty collided with enemy");
             respawnNutty();
-            //Destroy(gameObject);
         }
 
         if (collidedWith.gameObject.tag == "goal")
@@ -166,22 +167,18 @@ public class playerScript : MonoBehaviour
         {
             endPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
-
-
         }
 
         if (collidedWith.gameObject.name == "borderRight")
         {
             endPosition = new Vector3(endPosition.x - 0.1f, transform.position.y, transform.position.z);
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
-
         }
 
         if (collidedWith.gameObject.name == "borderBottom")
         {
             endPosition = new Vector3(transform.position.x, transform.position.y + 0.1f, endPosition.z);
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
-
         }
     }
     public void respawnNutty()
@@ -281,6 +278,5 @@ public class playerScript : MonoBehaviour
         score4.text = PlayerPrefs.GetInt("score"+3) == 0 ? "": PlayerPrefs.GetInt("score"+3) +"";
         score5.text = PlayerPrefs.GetInt("score"+4) == 0 ? "": PlayerPrefs.GetInt("score"+4) +"";
     }
-
-
+   
 }
