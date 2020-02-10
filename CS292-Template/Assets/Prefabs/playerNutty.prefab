@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3737121287570912091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 3
+  distanceToMove: 0
+  moveSpeed: 0
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}
@@ -128,6 +129,11 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   gameOverUI: {fileID: 0}
   noPause: {fileID: 0}
+  score1: {fileID: 0}
+  score2: {fileID: 0}
+  score3: {fileID: 0}
+  score4: {fileID: 0}
+  score5: {fileID: 0}
 --- !u!61 &3737121287570912090
 BoxCollider2D:
   m_ObjectHideFlags: 0
