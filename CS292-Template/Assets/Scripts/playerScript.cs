@@ -30,6 +30,9 @@ public class playerScript : MonoBehaviour
     public Text score3;
     public Text score4;
     public Text score5;
+    public float timeInvincible = 1.9f;
+    bool isInvincible;
+    float invincibleTimer;
 
     private Vector2 startTouchPosition, endTouchPosition;
 
@@ -60,68 +63,68 @@ public class playerScript : MonoBehaviour
         {
             animator.SetFloat("Speed", 0);
         }
-        //float horizontal = Input.GetAxis("Horizontal");
-        //float vertical = Input.GetAxis("Vertical");
-        // Vector2 move = new Vector2(horizontal, vertical);
-        /**
-        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
-        {
-            lookDirection.Set(move.x, move.y);
-            lookDirection.Normalize();
-        }
 
-        animator.SetFloat("Move X", move.x);
-        animator.SetFloat("Move Y", move.y);
-        animator.SetFloat("Look X", lookDirection.x);
-        animator.SetFloat("Look Y", lookDirection.y);
-        */
-        Vector2 position = rigidbody2d.position;
-
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            startTouchPosition = Input.GetTouch(0).position;
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        if (isInvincible)
         {
-            endTouchPosition = Input.GetTouch(0).position;
-            float FinX = endTouchPosition.x - startTouchPosition.x;
-            float FinY = endTouchPosition.y - startTouchPosition.y;
-            if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0)
             {
-                if (FinX > 0)
-                    movement("right");
+                isInvincible = false;
+                animator.SetBool("Hit", false);
+                respawnNutty();
+            }
+        }
+        else
+        {
+
+            Vector2 position = rigidbody2d.position;
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+                startTouchPosition = Input.GetTouch(0).position;
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                endTouchPosition = Input.GetTouch(0).position;
+                float FinX = endTouchPosition.x - startTouchPosition.x;
+                float FinY = endTouchPosition.y - startTouchPosition.y;
+                if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+                {
+                    if (FinX > 0)
+                        movement("right");
+                    else
+                        movement("left");
+                }
                 else
+                {
+                    if (FinY > 0)
+                        movement("up");
+                    else
+                        movement("down");
+                }
+                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+            }
+            if (rigidbody2d.velocity.magnitude == 0)
+            {
+                if (Input.GetKeyDown(KeyCode.A)) //Left
+                {
                     movement("left");
-            }
-            else
-            {
-                if (FinY > 0)
+                }
+                if (Input.GetKeyDown(KeyCode.D)) //Right
+                {
+                    movement("right");
+                }
+                if (Input.GetKeyDown(KeyCode.W)) //Up
+                {
                     movement("up");
-                else
+                }
+                if (Input.GetKeyDown(KeyCode.S)) //Down
+                {
                     movement("down");
-            }
-            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+                }
 
-        }
-        if (rigidbody2d.velocity.magnitude == 0)
-        {
-            if (Input.GetKeyDown(KeyCode.A)) //Left
-            {
-                movement("left");
-            }
-            if (Input.GetKeyDown(KeyCode.D)) //Right
-            {
-                movement("right");
-            }
-            if (Input.GetKeyDown(KeyCode.W)) //Up
-            {
-                movement("up");
-            }
-            if (Input.GetKeyDown(KeyCode.S)) //Down
-            {
-                movement("down");
-            }
-           
-            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
+            }
         }
     }
 
@@ -203,6 +206,9 @@ public class playerScript : MonoBehaviour
 
     public void damage()
     {
+        if (isInvincible)
+            return;
+
         if (health == 5)
             heart1.SetActive(false);
         if (health == 4)
@@ -228,7 +234,10 @@ public class playerScript : MonoBehaviour
         }
         else
         {
-            respawnNutty();
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
+            animator.SetBool("Hit", true);
+            //   respawnNutty();
         }
     }
 
