@@ -185,7 +185,7 @@ public class playerScript : MonoBehaviour
 
         if (collidedWith.gameObject.name == "borderRight")
         {
-            endPosition = new Vector3(endPosition.x - 0.1f, transform.position.y, transform.position.z);
+            endPosition = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
         }
 
