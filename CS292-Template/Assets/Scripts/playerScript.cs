@@ -30,7 +30,7 @@ public class playerScript : MonoBehaviour
     public Text score3;
     public Text score4;
     public Text score5;
-    public float timeInvincible = 1.9f;
+    public float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
 
