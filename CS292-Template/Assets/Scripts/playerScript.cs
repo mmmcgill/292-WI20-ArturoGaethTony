@@ -46,8 +46,8 @@ public class playerScript : MonoBehaviour
         health = 5;
         enemySpeed = 3.0f;
         endPosition = transform.position;
-        distanceToMove = 1.0f;
-        moveSpeed = 5.0f;
+        distanceToMove = 0.77f;
+        moveSpeed = 4.0f;
         rigidbody2d = GetComponent<Rigidbody2D>();
         spawnPos = transform.position;
         animator = GetComponent<Animator>();
@@ -130,6 +130,10 @@ public class playerScript : MonoBehaviour
 
     void movement(string direct)
     {
+        if (transform.position != endPosition)
+        {
+            return;
+        }
         animator.SetFloat("Speed", 1);
 
         switch (direct)
