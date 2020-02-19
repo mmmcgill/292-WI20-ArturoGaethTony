@@ -47,8 +47,7 @@ public class mapScript : MonoBehaviour
         bool bot = false;
         hi.z = 1;
         int iter = 0;
-        prevType = "grass";
-        for (int i = 6; i < y; i++)
+        for (int i = 0; i < y; i++)
         {
             if (((i+1) % 7) == 0)
             {

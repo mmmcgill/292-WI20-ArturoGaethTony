@@ -8,6 +8,7 @@ TagManager:
   - waterColliders
   - enemies
   - goal
+  - logs
   layers:
   - Default
   - TransparentFX

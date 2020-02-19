@@ -21,7 +21,7 @@ public class LogScript : MonoBehaviour
         {
             direction = -1;
         }
-        speed = playerScript.enemySpeed;
+        speed = 2;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
