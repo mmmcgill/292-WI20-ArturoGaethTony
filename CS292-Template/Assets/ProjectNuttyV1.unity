@@ -62721,7 +62721,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[1]
       value: 
-      objectReference: {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e,
+      objectReference: {fileID: 7656483808679827620, guid: fb3223480f551a049a43b9ad97bc0fa5,
         type: 3}
     - target: {fileID: -2144215821246403802, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -62732,12 +62732,12 @@ PrefabInstance:
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -62797,7 +62797,7 @@ PrefabInstance:
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_Name
-      value: spawner (2)
+      value: bird spawner 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f22a64a19dba34fb1988fd10a4e5d9, type: 3}
@@ -63338,17 +63338,17 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 7656483808679827620, guid: fb3223480f551a049a43b9ad97bc0fa5,
+      objectReference: {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e,
         type: 3}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.5
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -63408,7 +63408,7 @@ PrefabInstance:
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_Name
-      value: spawner (1)
+      value: ferret spawner 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f22a64a19dba34fb1988fd10a4e5d9, type: 3}
@@ -64459,15 +64459,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573635141}
     m_Modifications:
+    - target: {fileID: -2144215821246403802, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
+        type: 3}
+      propertyPath: enemies.Array.data[0]
+      value: 
+      objectReference: {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e,
+        type: 3}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27
+      value: -30.5
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.47
+      value: -27.44
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -64527,7 +64533,7 @@ PrefabInstance:
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_Name
-      value: spawner
+      value: ferret spawner 1
       objectReference: {fileID: 0}
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -65138,7 +65144,7 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[1]
       value: 
-      objectReference: {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e,
+      objectReference: {fileID: 7656483808679827620, guid: fb3223480f551a049a43b9ad97bc0fa5,
         type: 3}
     - target: {fileID: -2144215821246403802, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -65149,12 +65155,12 @@ PrefabInstance:
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 29.9
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -65214,7 +65220,7 @@ PrefabInstance:
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_Name
-      value: spawner (3)
+      value: bird spawner 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f22a64a19dba34fb1988fd10a4e5d9, type: 3}
@@ -67689,17 +67695,17 @@ PrefabInstance:
         type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 7656483808679827620, guid: fb3223480f551a049a43b9ad97bc0fa5,
+      objectReference: {fileID: 3604153367796958573, guid: 5b51663394b4c0046bdb11e99a38f73e,
         type: 3}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40
+      value: 33.6
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -15.3
       objectReference: {fileID: 0}
     - target: {fileID: 2232547715254605871, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
@@ -67749,7 +67755,7 @@ PrefabInstance:
     - target: {fileID: 4543333054500296057, guid: c4f22a64a19dba34fb1988fd10a4e5d9,
         type: 3}
       propertyPath: m_Name
-      value: spawner
+      value: ferret spawner 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f22a64a19dba34fb1988fd10a4e5d9, type: 3}
