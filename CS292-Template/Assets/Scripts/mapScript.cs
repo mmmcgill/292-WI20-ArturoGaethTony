@@ -36,7 +36,7 @@ public class mapScript : MonoBehaviour
         
     }
 
-    void generateMap()
+    public void generateMap()
     {
         hi = gameMap.origin;
         Tile currTile = grassTiles[Random.Range(0, grassTiles.Length-1)];
