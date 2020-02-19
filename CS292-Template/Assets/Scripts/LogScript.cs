@@ -41,11 +41,5 @@ public class LogScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if (collidedWith.gameObject.tag == "Player")
-        {
-            playerScript asdfa = collidedWith.gameObject.GetComponent<playerScript>();
-            asdfa.damage();
-        }
-
     }
 }

@@ -47,8 +47,8 @@ public class mapScript : MonoBehaviour
         bool bot = false;
         hi.z = 1;
         int iter = 0;
-
-        for (int i = 0; i < y; i++)
+        prevType = "grass";
+        for (int i = 6; i < y; i++)
         {
             if (((i+1) % 7) == 0)
             {
@@ -128,11 +128,11 @@ public class mapScript : MonoBehaviour
                 }
                 else if (currType == "grass")
                 {
-                    currTile = grassTiles[Random.Range(0, grassTiles.Length-1)];
+                    currTile = grassTiles[Random.Range(0, grassTiles.Length)];
                 }
                 else if (currType == "mud")
                 {
-                    currTile = mudTiles[Random.Range(0, mudTiles.Length-1)];
+                    currTile = mudTiles[Random.Range(0, mudTiles.Length)];
                 }
                 gameMap.SetTile(hi, currTile);
                 hi.x += 1;
