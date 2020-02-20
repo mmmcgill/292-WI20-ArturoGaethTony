@@ -39,21 +39,23 @@ public class mapScript : MonoBehaviour
     public void generateMap()
     {
         hi = gameMap.origin;
-        Tile currTile = grassTiles[Random.Range(0, grassTiles.Length-1)];
+        hi.y = hi.y + 9;
+        Tile currTile = grassTiles[Random.Range(0, grassTiles.Length)];
         string currType = "grass";
         string prevType = "grass";
-        string nextType = "water";
+        string nextType = types[Random.Range(0, 3)];
         bool top = false;
         bool bot = false;
         hi.z = 1;
         int iter = 0;
+        prevType = "grass";
         for (int i = 0; i < y; i++)
         {
             if (((i+1) % 7) == 0)
             {
                 nextType = types[Random.Range(0, 3)];
-                UnityEngine.Debug.Log("next type is ");
-                UnityEngine.Debug.Log(nextType);
+                //UnityEngine.Debug.Log("next type is ");
+                //UnityEngine.Debug.Log(nextType);
                 top = true;
                 iter = 0;
             }

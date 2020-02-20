@@ -134,6 +134,7 @@ MonoBehaviour:
   score3: {fileID: 0}
   score4: {fileID: 0}
   score5: {fileID: 0}
+  timeInvincible: 1.9
 --- !u!61 &3737121287570912090
 BoxCollider2D:
   m_ObjectHideFlags: 0

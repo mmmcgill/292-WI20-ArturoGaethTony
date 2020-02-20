@@ -35,22 +35,24 @@ public class playerScript : MonoBehaviour
     float invincibleTimer;
 
     private Vector2 startTouchPosition, endTouchPosition;
-
+    private mapScript callLater;
 
     public ArrayList highScores;
 
     // Start is called before the first frame update
     void Start()
     {
-        capTime = 4.0f;
+        capTime = 2.5f;
         health = 5;
         enemySpeed = 3.0f;
         endPosition = transform.position;
-        distanceToMove = 0.77f;
+        distanceToMove = 0.76f;
         moveSpeed = 4.0f;
         rigidbody2d = GetComponent<Rigidbody2D>();
         spawnPos = transform.position;
         animator = GetComponent<Animator>();
+        callLater = GameObject.Find("gameTileMap").GetComponent<mapScript>();
+        
         
         //high scores setting   
         highScores =new ArrayList();
@@ -251,11 +253,11 @@ public class playerScript : MonoBehaviour
         ScoreScript.scoreValue += 100;
         respawnNutty();
         enemySpeed += 0.5f;
-        if (capTime > 1.0f)
+        if (capTime > 0.5f)
         {
             capTime -= 0.1f;
         }
-
+        callLater.generateMap();
     }
 
     public void healNutty()
@@ -276,7 +278,7 @@ public class playerScript : MonoBehaviour
     public void resetScore()
     {
         enemySpeed = 3.0f;
-        capTime = 4.0f;
+        capTime = 2.5f;
         ScoreScript.scoreValue = 0;
     }
 
