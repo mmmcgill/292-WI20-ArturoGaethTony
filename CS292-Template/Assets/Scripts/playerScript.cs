@@ -33,6 +33,7 @@ public class playerScript : MonoBehaviour
     public float timeInvincible = 2.0f;
     bool isInvincible;
     float invincibleTimer;
+    public bool didRespawn;
 
     private Vector2 startTouchPosition, endTouchPosition;
     private mapScript callLater;
@@ -209,7 +210,6 @@ public class playerScript : MonoBehaviour
     }
     public void respawnNutty()
     {
-
         endPosition = spawnPos;
         UnityEngine.Debug.Log("nuttyRespawned");
         UnityEngine.Debug.Log(spawnPos);

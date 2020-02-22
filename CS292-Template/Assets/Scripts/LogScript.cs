@@ -42,4 +42,13 @@ public class LogScript : MonoBehaviour
         }
 
     }
+
+    void OnTriggerExit2D(Collider2D collidedWith)
+    {
+        if (collidedWith.gameObject.tag == "waterColliders")
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }

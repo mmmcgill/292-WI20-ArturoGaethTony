@@ -8,6 +8,7 @@ public class EnemyScript : MonoBehaviour
     public float speed;
     Rigidbody2D rigidbody2d;
     Animator animator;
+    public playerScript usable;
 
    // Start is called before the first frame update
     void Start()
@@ -35,6 +36,10 @@ public class EnemyScript : MonoBehaviour
         position.x = position.x + speed * direction * Time.deltaTime;
         rigidbody2d.MovePosition(position);
         animator.SetFloat("MoveX", direction);
+
+        if (usable.didRespawn == false) {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collidedWith)
@@ -49,7 +54,11 @@ public class EnemyScript : MonoBehaviour
             playerScript asdfa = collidedWith.gameObject.GetComponent<playerScript>();
             asdfa.damage();
         }
-        
+
+        if(collidedWith.gameObject.tag == "waterColliders")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
