@@ -177,6 +177,12 @@ public class playerScript : MonoBehaviour
             respawnNutty();
         }
 
+        if (collidedWith.gameObject.tag == "logs")
+        {
+            UnityEngine.Debug.Log("nutty collided with log");
+            endPosition.x = transform.position.x + 2  * Time.deltaTime;
+        }
+
         if (collidedWith.gameObject.tag == "goal")
         {
             UnityEngine.Debug.Log("nutty collided with goal");

@@ -5,6 +5,7 @@ using UnityEngine;
 public class spawnScript : MonoBehaviour
 {
     public GameObject[] enemies;
+    private int prevenemyChoice;
     private int enemyChoice;
     public float nextSpawnTime;
     public float startTime;
@@ -16,7 +17,8 @@ public class spawnScript : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        prevenemyChoice = -1;
         enemyChoice = Random.Range(0, enemies.Length);
         startTime = 3.0f;
         nextSpawnTime = 0.5f;
@@ -28,10 +30,11 @@ public class spawnScript : MonoBehaviour
         //prefab slots:, 
         //Eagles should be in slot 0
         // Eagles in slot 1
-
+        
         if (enemyChoice == 1){
             position.y += .40f;
         }
+        prevenemyChoice = enemyChoice;
     }
 
     // Update is called once per frame
@@ -43,7 +46,14 @@ public class spawnScript : MonoBehaviour
         if (nextSpawnTime <= 0)
         {
            Instantiate(spawning, position, Quaternion.identity);
-            nextSpawnTime = Random.Range(0.5f, timerCap);
+            if (spawning == log)
+            {
+                nextSpawnTime = Random.Range(1.5f, timerCap);
+            } else
+            {
+                nextSpawnTime = Random.Range(2.0f, timerCap);
+            }
+            
             
         }
         else
@@ -62,20 +72,25 @@ public class spawnScript : MonoBehaviour
             touchingWater = true;
         }
 
+
+
     }
 
     void OnTriggerExit2D(Collider2D collidedWith)
     {
-        if (touchingWater)
+        if (collidedWith.gameObject.tag == "waterColliders")
         {
             UnityEngine.Debug.Log("Spawner No longer in water");
-            spawning = enemies[Random.Range(0, enemies.Length)];
+            enemyChoice = Random.Range(0, enemies.Length);
+            spawning = enemies[enemyChoice];
             timerCap = playerScript.capTime;
             touchingWater = false;
             if (enemyChoice == 1)
             {
                 position.y += .40f;
             }
+
         }
+
     }
 }
