@@ -9,6 +9,7 @@ TagManager:
   - enemies
   - goal
   - logs
+  - Nuts
   layers:
   - Default
   - TransparentFX

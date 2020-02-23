@@ -37,7 +37,7 @@ public class playerScript : MonoBehaviour
 
     private Vector2 startTouchPosition, endTouchPosition;
     private mapScript callLater;
-
+    private NutsSpawner nutsSpawner;
     public ArrayList highScores;
 
     // Start is called before the first frame update
@@ -53,7 +53,7 @@ public class playerScript : MonoBehaviour
         spawnPos = transform.position;
         animator = GetComponent<Animator>();
         callLater = GameObject.Find("gameTileMap").GetComponent<mapScript>();
-        
+        nutsSpawner = GameObject.Find("Nuts Spawner").GetComponent<NutsSpawner>();
         
         //high scores setting   
         highScores =new ArrayList();
@@ -169,7 +169,7 @@ public class playerScript : MonoBehaviour
                 return;
         }
     }
-            void OnCollisionEnter2D(Collision2D collidedWith)
+    void OnCollisionEnter2D(Collision2D collidedWith)
     {
         UnityEngine.Debug.Log("Nutty Crashed");
         if (collidedWith.gameObject.tag == "enemies")
@@ -264,6 +264,7 @@ public class playerScript : MonoBehaviour
             capTime -= 0.1f;
         }
         callLater.generateMap();
+        nutsSpawner.generateNuts();
     }
 
     public void healNutty()
