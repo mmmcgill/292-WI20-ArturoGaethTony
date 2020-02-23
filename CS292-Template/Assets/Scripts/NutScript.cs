@@ -11,14 +11,15 @@ public class NutScript : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collidedWith)
     {
-        if (collidedWith.gameObject.tag == "waterColliders" )
+        if (collidedWith.gameObject.tag == "waterColliders" || collidedWith.gameObject.tag == "nuts" )
         {
-            gameObject.transform.position=new Vector3(Random.Range(-2.2f, 2.3f), Random.Range(-3.3f, 4.2f));
+            gameObject.transform.localPosition=new Vector3(Random.Range(-2.2f, 2.3f), Random.Range(-3.3f, 4.2f));
         }
         if (collidedWith.gameObject.tag == "Player")
         {   
             UnityEngine.Debug.Log("nutty collided with nuts");
             ScoreScript.scoreValue += 50;
+            playerScript.nutsCollected+=1;
             SoundMangerScript.PlaySound("nutCollect");
             Destroy(gameObject);
         }

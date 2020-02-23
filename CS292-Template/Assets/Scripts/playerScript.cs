@@ -39,7 +39,8 @@ public class playerScript : MonoBehaviour
     private mapScript callLater;
     private NutsSpawner nutsSpawner;
     public ArrayList highScores;
-
+    public int nuts;
+    public static int nutsCollected=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +55,7 @@ public class playerScript : MonoBehaviour
         animator = GetComponent<Animator>();
         callLater = GameObject.Find("gameTileMap").GetComponent<mapScript>();
         nutsSpawner = GameObject.Find("Nuts Spawner").GetComponent<NutsSpawner>();
-        
+        nuts=nutsSpawner.numNuts;
         //high scores setting   
         highScores =new ArrayList();
     }
@@ -264,7 +265,11 @@ public class playerScript : MonoBehaviour
             capTime -= 0.1f;
         }
         callLater.generateMap();
+        if(nutsCollected==nuts){
         nutsSpawner.generateNuts();
+        nuts=nutsSpawner.numNuts;
+        nutsCollected=0;
+        }
     }
 
     public void healNutty()

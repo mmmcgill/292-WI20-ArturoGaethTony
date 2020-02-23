@@ -5,7 +5,7 @@ using UnityEngine;
 public class NutsSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int numNuts;
+    public int numNuts;
     public GameObject nut;
     void Start()
     {
