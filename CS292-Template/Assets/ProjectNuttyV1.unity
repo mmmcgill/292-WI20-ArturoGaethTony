@@ -67637,7 +67637,6 @@ GameObject:
   - component: {fileID: 1426237155}
   - component: {fileID: 1426237154}
   - component: {fileID: 1426237153}
-  - component: {fileID: 1426237152}
   m_Layer: 5
   m_Name: Tutorial Button
   m_TagString: Untagged
@@ -67664,18 +67663,6 @@ RectTransform:
   m_AnchoredPosition: {x: -129, y: -132}
   m_SizeDelta: {x: 214, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1426237152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426237150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c646ef9dc4c524aa703da9f2256d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1426237153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68907,7 +68894,6 @@ GameObject:
   - component: {fileID: 1659376050}
   - component: {fileID: 1659376049}
   - component: {fileID: 1659376048}
-  - component: {fileID: 1659376047}
   m_Layer: 5
   m_Name: Exit Tutorial
   m_TagString: Untagged
@@ -68934,18 +68920,6 @@ RectTransform:
   m_AnchoredPosition: {x: -247, y: -202}
   m_SizeDelta: {x: 214, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1659376047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659376045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0c646ef9dc4c524aa703da9f2256d19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1659376048
 MonoBehaviour:
   m_ObjectHideFlags: 0

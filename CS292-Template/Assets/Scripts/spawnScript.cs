@@ -21,7 +21,7 @@ public class spawnScript : MonoBehaviour
         prevenemyChoice = -1;
         enemyChoice = Random.Range(0, enemies.Length);
         startTime = 3.0f;
-        nextSpawnTime = 0.5f;
+        nextSpawnTime = Random.Range(2.0f, 3.0f);
         position = transform.position;
         spawning = enemies[enemyChoice];
         timerCap = playerScript.capTime;
@@ -48,10 +48,10 @@ public class spawnScript : MonoBehaviour
            Instantiate(spawning, position, Quaternion.identity);
             if (spawning == log)
             {
-                nextSpawnTime = Random.Range(1.5f, timerCap);
+                nextSpawnTime = Random.Range(2.0f, 3.0f);
             } else
             {
-                nextSpawnTime = Random.Range(2.0f, 3.0f);
+                nextSpawnTime = Random.Range(3.0f, 6.0f);
             }
             
             

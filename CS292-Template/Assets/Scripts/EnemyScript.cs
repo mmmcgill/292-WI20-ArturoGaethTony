@@ -36,10 +36,6 @@ public class EnemyScript : MonoBehaviour
         position.x = position.x + speed * direction * Time.deltaTime;
         rigidbody2d.MovePosition(position);
         animator.SetFloat("MoveX", direction);
-/*
-        if (usable.didRespawn == false) {
-            Destroy(gameObject);
-        }*/
     }
 
     void OnTriggerEnter2D(Collider2D collidedWith)
