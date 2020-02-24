@@ -157,9 +157,9 @@ RectTransform:
   m_Father: {fileID: 596307328}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00003624, y: -1329}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00003624, y: -112}
   m_SizeDelta: {x: 237.9, y: 5252.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39844039
@@ -70139,9 +70139,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.00007247925, y: -380}
+  m_AnchoredPosition: {x: -0.000061035156, y: -55}
   m_SizeDelta: {x: 1080.34, y: 221.3003}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1585419671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70173,7 +70173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: '     Credits'
 --- !u!222 &1585419672
 CanvasRenderer:
   m_ObjectHideFlags: 0
