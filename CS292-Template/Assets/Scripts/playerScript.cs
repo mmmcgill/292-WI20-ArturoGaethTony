@@ -192,6 +192,16 @@ public class playerScript : MonoBehaviour
                 return;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collidedWith)
+    {
+        if (collidedWith.gameObject.tag == "waterColliders")
+        {
+            if (!waterSafe & !moving)
+                damage();
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collidedWith)
     {
         UnityEngine.Debug.Log("Nutty Crashed");

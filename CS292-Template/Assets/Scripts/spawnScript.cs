@@ -51,7 +51,7 @@ public class spawnScript : MonoBehaviour
                 nextSpawnTime = Random.Range(1.5f, timerCap);
             } else
             {
-                nextSpawnTime = Random.Range(2.0f, timerCap);
+                nextSpawnTime = Random.Range(2.0f, 3.0f);
             }
             
             
