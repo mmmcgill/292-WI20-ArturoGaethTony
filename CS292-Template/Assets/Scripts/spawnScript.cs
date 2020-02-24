@@ -65,7 +65,7 @@ public class spawnScript : MonoBehaviour
     {
         if (collidedWith.gameObject.tag == "waterColliders")
         {
-            UnityEngine.Debug.Log("spawner on water");
+            //UnityEngine.Debug.Log("spawner on water");
             spawning = log;
             timerCap = 2.5f;
             position = transform.position;
@@ -80,7 +80,7 @@ public class spawnScript : MonoBehaviour
     {
         if (collidedWith.gameObject.tag == "waterColliders")
         {
-            UnityEngine.Debug.Log("Spawner No longer in water");
+            //UnityEngine.Debug.Log("Spawner No longer in water");
             enemyChoice = Random.Range(0, enemies.Length);
             spawning = enemies[enemyChoice];
             timerCap = playerScript.capTime;

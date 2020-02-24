@@ -44,6 +44,10 @@ public class playerScript : MonoBehaviour
     public bool waterSafe = false;
     public float logSpeed;
     public int logDirection;
+    bool edge = false;
+    private int i;
+    bool rightB = false;
+    bool leftB = false;
 
     private bool moving = false;
 
@@ -66,15 +70,37 @@ public class playerScript : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         nuts =nutsSpawner.numNuts;
         //high scores setting   
+        int i = 0;
         highScores =new ArrayList();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (transform.position == endPosition)
         {
+            i = 0;
             animator.SetFloat("Speed", 0);
+            moving = false;
+        }
+        else
+        {
+            if (i > 4)
+            {
+                UnityEngine.Debug.Log("Trying to fix");
+                //respawnNutty();
+                endPosition.y += .01f;
+                if (leftB) { endPosition.x += .12f; }
+                else if (rightB) { endPosition.x -= .12f; }
+                transform.position = endPosition;
+            }
+            //UnityEngine.Debug.Log(endPosition);
+            //UnityEngine.Debug.Log(transform.position);
+            //UnityEngine.Debug.Log(moving);
+            i++;
+            //UnityEngine.Debug.Log(i);
+
         }
 
         if (isInvincible)
@@ -116,53 +142,49 @@ public class playerScript : MonoBehaviour
                 rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
             }
+
+            //Moving with the log
+            if ((waterSafe) && (!moving) && (!edge))
+            {
+                endPosition = transform.position;
+                endPosition.x = endPosition.x + logSpeed * logDirection * Time.deltaTime;
+                rigidbody2d.MovePosition(endPosition);
+            }
+            // if (!edge) { rigidbody2d.WakeUp(); }
+
             if (rigidbody2d.velocity.magnitude == 0)
+            //if (!moving)
             {
                 if (Input.GetKeyDown(KeyCode.A)) //Left
                 {
                     movement("left");
                 }
-                if (Input.GetKeyDown(KeyCode.D)) //Right
+                else if (Input.GetKeyDown(KeyCode.D)) //Right
                 {
                     movement("right");
                 }
-                if (Input.GetKeyDown(KeyCode.W)) //Up
+                else if (Input.GetKeyDown(KeyCode.W)) //Up
                 {
                     movement("up");
                 }
-                if (Input.GetKeyDown(KeyCode.S)) //Down
+                else if (Input.GetKeyDown(KeyCode.S)) //Down
                 {
                     movement("down");
                 }
-
-                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
-
             }
-            if (endPosition == transform.position)
+            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+            if (!waterSafe)
             {
-                moving = false;
-            }
-            if (waterSafe & !moving)
-            {
-                endPosition = transform.position;
-                endPosition.x = endPosition.x + logSpeed * logDirection * Time.deltaTime;
-                rigidbody2d.MovePosition(endPosition);
-                /**
-                Vector2 newPosition = transform.position;
-                //Vector2 nuttyPosition = nuttyBod.position;
-                newPosition.x = newPosition.x + logSpeed * logDirection * Time.deltaTime;
-                rigidbody2d.MovePosition(newPosition);
-                */
+                edge = false;
             }
         }
     }
 
     void movement(string direct)
     {
-        if (transform.position != endPosition)
-        {
-            return;
-        }
+
+        if (moving) { return; }
         animator.SetFloat("Speed", 1);
         moving = true;
         switch (direct)
@@ -207,17 +229,17 @@ public class playerScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collidedWith)
     {
-        UnityEngine.Debug.Log("Nutty Crashed");
+        //UnityEngine.Debug.Log("Nutty Crashed");
         if (collidedWith.gameObject.tag == "enemies")
         {
-            UnityEngine.Debug.Log("nutty collided with enemy");
+            //UnityEngine.Debug.Log("nutty collided with enemy");
             respawnNutty();
         }
 
         if (collidedWith.gameObject.tag == "logs")
         {
-            UnityEngine.Debug.Log("nutty collided with log");
-            endPosition.x = transform.position.x + 2  * Time.deltaTime;
+            //UnityEngine.Debug.Log("nutty collided with log");
+            //endPosition.x = transform.position.x + 2  * Time.deltaTime;
         }
 
         if (collidedWith.gameObject.tag == "goal")
@@ -228,14 +250,34 @@ public class playerScript : MonoBehaviour
 
         if (collidedWith.gameObject.name == "borderLeft")
         {
-            endPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+            edge = true;
+            leftB = true;
+            rightB = false;
+            endPosition = new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z);
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
         }
 
         if (collidedWith.gameObject.name == "borderRight")
         {
-            endPosition = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
-            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+            edge = true;
+            leftB = false;
+            rightB = true;
+                endPosition = new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z);
+                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+
+            /**
+            else if ((!edge) && (!moving))
+            { 
+                edge = true;
+                //endPosition = transform.position;
+                //rigidbody2d.MovePosition(endPosition);
+                //rigidbody2d.Sleep();
+                UnityEngine.Debug.Log("Freezing Nutty");/**
+                endPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
+                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+                rigidbody2d.Sleep();
+                
+            } */
         }
 
         if (collidedWith.gameObject.name == "borderBottom")
@@ -244,11 +286,19 @@ public class playerScript : MonoBehaviour
             rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
         }
     }
+    /**
+    void OnCollisionExit2D(Collision2D collidedWith)
+    {
+        if ((collidedWith.gameObject.name == "borderRight") || (collidedWith.gameObject.name == "borderLeft"))
+        {
+            edge = false;
+        }
+    }*/
     public void respawnNutty()
     {
         endPosition = spawnPos;
         UnityEngine.Debug.Log("nuttyRespawned");
-        UnityEngine.Debug.Log(spawnPos);
+        //UnityEngine.Debug.Log(spawnPos);
         transform.position = spawnPos;
         mySpriteRenderer.sortingOrder = 0;
     }

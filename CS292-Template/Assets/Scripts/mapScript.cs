@@ -18,7 +18,7 @@ public class mapScript : MonoBehaviour
     public Tile[] mudTiles;
     Vector3Int hi;
     int x = 83;
-    int y = 99;
+    int y = 99-22;
     private string[] types = {"grass", "mud", "water"};
 
     // Start is called before the first frame update
