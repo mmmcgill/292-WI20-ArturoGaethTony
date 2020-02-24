@@ -266,9 +266,9 @@ public class playerScript : MonoBehaviour
         }
         callLater.generateMap();
         if(nutsCollected==nuts){
-        nutsSpawner.generateNuts();
-        nuts=nutsSpawner.numNuts;
-        nutsCollected=0;
+            nutsSpawner.generateNuts();
+            nuts=nutsSpawner.numNuts;
+            nutsCollected=0;
         }
     }
 
