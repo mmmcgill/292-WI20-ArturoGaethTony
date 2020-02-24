@@ -4537,6 +4537,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &634760397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634760398}
+  - component: {fileID: 634760400}
+  - component: {fileID: 634760399}
+  m_Layer: 5
+  m_Name: '"www.deviantart.com"'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &634760398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634760397}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2045961677}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 14.15, y: -555.19995}
+  m_SizeDelta: {x: 973.4, y: 65.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &634760399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634760397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.28627452, g: 0.70980394, b: 0.427451, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 200
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: www.deviantart.com
+--- !u!222 &634760400
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634760397}
+  m_CullTransparentMesh: 0
 --- !u!1 &717197099
 GameObject:
   m_ObjectHideFlags: 0
@@ -65009,8 +65086,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 14.15, y: -569}
-  m_SizeDelta: {x: 973.4, y: 100}
+  m_AnchoredPosition: {x: 14.15, y: -490}
+  m_SizeDelta: {x: 973.4, y: 65.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084739758
 MonoBehaviour:
@@ -65032,7 +65109,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -66309,8 +66386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000012398, y: -269}
-  m_SizeDelta: {x: 959.25, y: 100}
+  m_AnchoredPosition: {x: -1.3349, y: -260.3}
+  m_SizeDelta: {x: 977.8, y: 78.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248213972
 MonoBehaviour:
@@ -66332,7 +66409,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -67275,8 +67352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 3.5375, y: -169}
-  m_SizeDelta: {x: 966.32, y: 100}
+  m_AnchoredPosition: {x: 3.5375, y: -170}
+  m_SizeDelta: {x: 985, y: 101.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353571405
 MonoBehaviour:
@@ -67298,7 +67375,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -68993,8 +69070,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 3.5375, y: -369}
-  m_SizeDelta: {x: 980.47, y: 100}
+  m_AnchoredPosition: {x: 3.5375, y: -332.25}
+  m_SizeDelta: {x: 980.5, y: 65.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669902884
 MonoBehaviour:
@@ -69016,7 +69093,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -70441,8 +70518,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000023842, y: -469}
-  m_SizeDelta: {x: 980.47, y: 100}
+  m_AnchoredPosition: {x: 0.000023842, y: -419}
+  m_SizeDelta: {x: 980.5, y: 76.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989230226
 MonoBehaviour:
@@ -70464,7 +70541,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d8cb543eb09cab44395997b816ec9648, type: 3}
-    m_FontSize: 75
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -70725,6 +70802,7 @@ RectTransform:
   - {fileID: 1669902883}
   - {fileID: 1989230225}
   - {fileID: 1084739757}
+  - {fileID: 634760398}
   m_Father: {fileID: 39844038}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
