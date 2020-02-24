@@ -41,6 +41,12 @@ public class playerScript : MonoBehaviour
     public ArrayList highScores;
     public int nuts;
     public static int nutsCollected=0;
+    public bool waterSafe = false;
+    public float logSpeed;
+    public int logDirection;
+
+    private bool moving = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -129,6 +135,22 @@ public class playerScript : MonoBehaviour
                 rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
             }
+            if (endPosition == transform.position)
+            {
+                moving = false;
+            }
+            if (waterSafe & !moving)
+            {
+                endPosition = transform.position;
+                endPosition.x = endPosition.x + logSpeed * logDirection * Time.deltaTime;
+                rigidbody2d.MovePosition(endPosition);
+                /**
+                Vector2 newPosition = transform.position;
+                //Vector2 nuttyPosition = nuttyBod.position;
+                newPosition.x = newPosition.x + logSpeed * logDirection * Time.deltaTime;
+                rigidbody2d.MovePosition(newPosition);
+                */
+            }
         }
     }
 
@@ -139,7 +161,7 @@ public class playerScript : MonoBehaviour
             return;
         }
         animator.SetFloat("Speed", 1);
-
+        moving = true;
         switch (direct)
         {
             case "up":
@@ -254,6 +276,15 @@ public class playerScript : MonoBehaviour
         }
     }
 
+    public void waterSafety()
+    {
+        waterSafe = !waterSafe;
+    }
+    public void onLog(int dir, float speed)
+    {
+        logDirection = dir;
+        logSpeed = speed;
+    }
     public void reachedGoal()
     {
         SoundMangerScript.PlaySound("levelClear");

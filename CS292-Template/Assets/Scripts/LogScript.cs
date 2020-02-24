@@ -7,6 +7,8 @@ public class LogScript : MonoBehaviour
     public int direction;
     public float speed;
     Rigidbody2D rigidbody2d;
+    private bool hasNutty = false;
+    //Rigidbody2D nuttyBod;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,13 @@ public class LogScript : MonoBehaviour
 
         position.x = position.x + speed * direction * Time.deltaTime;
         rigidbody2d.MovePosition(position);
+        /**
+        if ((hasNutty) & (nuttyBod != null))
+        {
+            Vector2 nuttyPosition = nuttyBod.position;
+            nuttyPosition.x = position.x + speed * direction * Time.deltaTime;
+            nuttyBod.MovePosition(nuttyPosition);
+        }*/
     }
 
     void OnTriggerEnter2D(Collider2D collidedWith)
@@ -40,6 +49,16 @@ public class LogScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if (collidedWith.gameObject.tag == "Player")
+        {
+            playerScript nuttyScript = collidedWith.gameObject.GetComponent<playerScript>();
+            //nuttyBod = collidedWith.gameObject.GetComponent<Rigidbody2D>();
+            nuttyScript.onLog(direction, speed);
+            nuttyScript.waterSafety();
+            hasNutty = true;
+
+        } 
 
     }
 
@@ -49,6 +68,14 @@ public class LogScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if (collidedWith.gameObject.tag == "Player")
+        {
+            playerScript nuttyScript = collidedWith.gameObject.GetComponent<playerScript>();
+            nuttyScript.waterSafety();
+            hasNutty = false;
+           // nuttyBod = null;
 
+        }
     }
 }
