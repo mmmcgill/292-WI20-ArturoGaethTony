@@ -47,6 +47,8 @@ public class playerScript : MonoBehaviour
 
     private bool moving = false;
 
+    SpriteRenderer mySpriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +63,8 @@ public class playerScript : MonoBehaviour
         animator = GetComponent<Animator>();
         callLater = GameObject.Find("gameTileMap").GetComponent<mapScript>();
         nutsSpawner = GameObject.Find("Nuts Spawner").GetComponent<NutsSpawner>();
-        nuts=nutsSpawner.numNuts;
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        nuts =nutsSpawner.numNuts;
         //high scores setting   
         highScores =new ArrayList();
     }
@@ -247,6 +250,7 @@ public class playerScript : MonoBehaviour
         UnityEngine.Debug.Log("nuttyRespawned");
         UnityEngine.Debug.Log(spawnPos);
         transform.position = spawnPos;
+        mySpriteRenderer.sortingOrder = 0;
     }
 
     public void damage()
@@ -282,6 +286,7 @@ public class playerScript : MonoBehaviour
             isInvincible = true;
             invincibleTimer = timeInvincible;
             animator.SetBool("Hit", true);
+            mySpriteRenderer.sortingOrder = -4;
             //   respawnNutty();
         }
     }
