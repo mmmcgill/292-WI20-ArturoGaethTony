@@ -86,7 +86,7 @@ public class playerScript : MonoBehaviour
         }
         else
         {
-            if (i > 4)
+            if (i > 20)
             {
                 UnityEngine.Debug.Log("Trying to fix");
                 //respawnNutty();
@@ -125,20 +125,24 @@ public class playerScript : MonoBehaviour
                 endTouchPosition = Input.GetTouch(0).position;
                 float FinX = endTouchPosition.x - startTouchPosition.x;
                 float FinY = endTouchPosition.y - startTouchPosition.y;
-                if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+                if ((Mathf.Abs(FinX) > 1.5f) || (Mathf.Abs(FinY) > 1.5f))
                 {
-                    if (FinX > 0)
-                        movement("right");
+                    if (Mathf.Abs(FinX) > Mathf.Abs(FinY))
+                    {
+                        if (FinX > 0)
+                            movement("right");
+                        else
+                            movement("left");
+                    }
                     else
-                        movement("left");
+                    {
+                        if (FinY > 0)
+                            movement("up");
+                        else
+                            movement("down");
+                    }
                 }
-                else
-                {
-                    if (FinY > 0)
-                        movement("up");
-                    else
-                        movement("down");
-                }
+
                 rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
             }
@@ -171,9 +175,9 @@ public class playerScript : MonoBehaviour
                 {
                     movement("down");
                 }
-            }
-            rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
+                rigidbody2d.MovePosition(Vector3.MoveTowards(transform.position, endPosition, moveSpeed * Time.deltaTime));
 
+            }
             if (!waterSafe)
             {
                 edge = false;

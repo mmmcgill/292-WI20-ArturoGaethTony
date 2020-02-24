@@ -52,7 +52,7 @@ public class EnemyScript : MonoBehaviour
         else if (collidedWith.gameObject.tag == "Player")
         {
             playerScript asdfa = collidedWith.gameObject.GetComponent<playerScript>();
-            //asdfa.damage();
+            asdfa.damage();
         }
 
         if(collidedWith.gameObject.tag == "waterColliders")
