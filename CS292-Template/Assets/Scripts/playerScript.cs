@@ -416,5 +416,12 @@ public class playerScript : MonoBehaviour
         score4.text = PlayerPrefs.GetInt("score"+3) == 0 ? "": PlayerPrefs.GetInt("score"+3) +"";
         score5.text = PlayerPrefs.GetInt("score"+4) == 0 ? "": PlayerPrefs.GetInt("score"+4) +"";
     }
+
+    public void resetInvincibility()
+    {
+        isInvincible = false;
+        invincibleTimer = 0;
+        animator.SetBool("Hit", false);
+    }
    
 }
