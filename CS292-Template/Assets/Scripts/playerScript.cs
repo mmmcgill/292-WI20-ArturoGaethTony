@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class playerScript : MonoBehaviour
 {
     public int health;
-    private Vector2 spawnPos;
+    public Vector2 spawnPos;
     public static float enemySpeed;
     public static float capTime;
     Rigidbody2D rigidbody2d;
@@ -365,11 +365,8 @@ public class playerScript : MonoBehaviour
             capTime -= 0.1f;
         }
         callLater.generateMap();
-        if(nutsCollected==nuts){
-            nutsSpawner.generateNuts();
-            nuts=nutsSpawner.numNuts;
-            nutsCollected=0;
-        }
+        checkNuts();
+        
     }
 
     public void healNutty()
@@ -409,6 +406,15 @@ public class playerScript : MonoBehaviour
         setScore();
     }
 
+    public void checkNuts()
+    {
+        if (nutsCollected == nuts)
+        {
+            nutsSpawner.generateNuts();
+            nuts = nutsSpawner.numNuts;
+            nutsCollected = 0;
+        }
+    }
     public void setScore(){
         score1.text = PlayerPrefs.GetInt("score"+0) == 0 ? "": PlayerPrefs.GetInt("score"+0) +"";
         score2.text = PlayerPrefs.GetInt("score"+1) == 0 ? "": PlayerPrefs.GetInt("score"+1) +"";
