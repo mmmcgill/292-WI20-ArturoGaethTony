@@ -72,6 +72,7 @@ public class playerScript : MonoBehaviour
         //high scores setting   
         int i = 0;
         highScores =new ArrayList();
+        Debug.Log("This is a highscore variable");
     }
 
     // Update is called once per frame
@@ -423,5 +424,4 @@ public class playerScript : MonoBehaviour
         invincibleTimer = 0;
         animator.SetBool("Hit", false);
     }
-   
 }
