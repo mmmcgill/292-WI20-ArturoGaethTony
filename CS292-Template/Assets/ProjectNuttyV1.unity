@@ -1350,7 +1350,7 @@ RectTransform:
   m_LocalScale: {x: 1.7834212, y: 1.7834212, z: 1.7834212}
   m_Children: []
   m_Father: {fileID: 2066354233}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1394,7 +1394,9 @@ MonoBehaviour:
 
     -Collect nuts to get higher score.
 
-    -Jump on Logs to pass the water.'
+    -Water is dangerous, use the logs to pass
+
+    -Mud/Grass is safe, but watch for enemies!'
 --- !u!222 &227286310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -70161,7 +70163,7 @@ RectTransform:
   m_LocalScale: {x: 1.7834212, y: 1.7834212, z: 1.7834212}
   m_Children: []
   m_Father: {fileID: 2066354233}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -71764,7 +71766,7 @@ RectTransform:
   m_LocalScale: {x: 1.2170602, y: 1.2170602, z: 1.2170602}
   m_Children: []
   m_Father: {fileID: 2066354233}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -74084,9 +74086,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.56072, y: 0.56072, z: 0.56072}
   m_Children:
-  - {fileID: 1659376046}
   - {fileID: 1396697947}
   - {fileID: 227286308}
+  - {fileID: 1659376046}
   m_Father: {fileID: 270180994}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
