@@ -5015,8 +5015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -16.7, y: -1161.1}
-  m_SizeDelta: {x: 811, y: 720.6}
+  m_AnchoredPosition: {x: -32.564, y: -1298}
+  m_SizeDelta: {x: 793.21, y: 874}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603144892
 MonoBehaviour:
@@ -5055,7 +5055,9 @@ MonoBehaviour:
 
     -Collect nuts to get higher score.
 
-    -Jump on Logs to pass the water.'
+    -Water is dangerous, use the logs to pass
+
+    -Mud/Grass is safe, but watch for enemies!'
 --- !u!222 &603144893
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -66806,7 +66808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -464}
+  m_AnchoredPosition: {x: 3, y: -541}
   m_SizeDelta: {x: 320.31, y: 321.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &942208275
@@ -69859,8 +69861,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 400}
-  m_SizeDelta: {x: 1629.5, y: 2172.1}
+  m_AnchoredPosition: {x: -5, y: 352.94}
+  m_SizeDelta: {x: 1629.5, y: 2340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349798157
 MonoBehaviour:
